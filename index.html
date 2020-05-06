@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-dark">
+    <!--top section-->
+    <div class="intro py-3 bg-white text-center">
+      <div class="container">
+        <h2 class="text-secondary display-3 my-4">JavaScript Quiz</h2>
+      </div>
+    </div>
+
+    <!-- button show-quiz-->
+    <div class="text-center">
+      <button class="show-quiz btn btn-secondary p-3">Start a Quiz</button>
+    </div>
+
+    <!--result section-->
+    <div class="result py-4 d-none bg-light text-center">
+      <div class="container lead">
+        <p><span class="text-primary display-4 p-3"></span>correct answers.</p>
+      </div>
+    </div>
+
+    <!--quiz section-->
+    <div class="quiz py-4 bg-primary d-none">
+      <div class="container">
+        <h2 class="my-5 text-white">Let's start with the questions...</h2>
+
+        <!--form-->
+        <form class="quiz-form text-light">
+          <!--question 1-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              1. How do you create a function in JavaScript?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q1A" type="radio" name="q1" value="A" checked />
+              <label for="q1A" class="form-check-label"> function myFunction()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q1B" type="radio" name="q1" value="B" />
+              <label for="q1B" class="form-check-label"> function=myFunction()</label>
+            </div>
+          </div>
+
+          <!--question 2-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              2. How to write an IF statement in JavaScript?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q2A" type="radio" name="q2" value="A" checked />
+              <label for="q2A" class="form-check-label"> if (i==5)</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q2B" type="radio" name="q2" value="B" />
+              <label for="q2B" class="form-check-label"> if i = 5</label>
+            </div>
+          </div>
+
+          <!--question 3-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              3. How does a WHILE loop start?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q3A" type="radio" name="q3" value="A" checked />
+              <label for="q3A" class="form-check-label"> while(i <= 10)</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q3B" type="radio" name="q3" value="B" />
+              <label for="q3B" class="form-check-label"> while(i <=10; i++)</label>
+            </div>
+          </div>
+
+          <!--question 4-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              4. What is the correct way to write a JavaScript array?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q4A" type="radio" name="q4" value="A" checked />
+              <label for="q4A" class="form-check-label">
+                var colors = "red", "green", "blue";</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q4B" type="radio" name="q4" value="B" />
+              <label for="q4B" class="form-check-label">
+                var colors = ["red", "green", "blue"];</label
+              >
+            </div>
+          </div>
+
+          <!--question 5-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              5. Can you pass a anonymous function as an argument to another function?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q5A" type="radio" name="q5" value="A" checked />
+              <label for="q5A" class="form-check-label"> true</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q5B" type="radio" name="q5" value="B" />
+              <label for="q5B" class="form-check-label"> false</label>
+            </div>
+          </div>
+
+          <!--question 6-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              6. Which of the following type of variable is visible only within a function where it
+              is defined?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q6A" type="radio" name="q6" value="A" checked />
+              <label for="q6A" class="form-check-label"> global variable </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q6B" type="radio" name="q6" value="B" />
+              <label for="q6B" class="form-check-label"> local variable</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q6C" type="radio" name="q6" value="C" />
+              <label for="q6C" class="form-check-label"> Both of the above.</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q6D" type="radio" name="q6" value="D" />
+              <label for="q6D" class="form-check-label"> None of the above.</label>
+            </div>
+          </div>
+
+          <!--question 7-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              7. Which built-in method returns the characters in a string beginning at the specified
+              location?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q7A" type="radio" name="q7" value="A" checked />
+              <label for="q7A" class="form-check-label"> substr()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q7B" type="radio" name="q7" value="B" />
+              <label for="q7B" class="form-check-label"> getSubstring()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q7C" type="radio" name="q7" value="C" />
+              <label for="q7C" class="form-check-label"> slice()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q7D" type="radio" name="q7" value="D" />
+              <label for="q7D" class="form-check-label"> None of the above.</label>
+            </div>
+          </div>
+
+          <!--question 8-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              8. Which of the following function of String object creates a string to be displayed
+              in a big font as if it were in a 'big' tag?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q8A" type="radio" name="q8" value="A" checked />
+              <label for="q8A" class="form-check-label"> anchor()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q8B" type="radio" name="q8" value="B" />
+              <label for="q8B" class="form-check-label"> big()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q8C" type="radio" name="q8" value="C" />
+              <label for="q8C" class="form-check-label"> blink()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q8D" type="radio" name="q8" value="D" />
+              <label for="q8D" class="form-check-label"> italics()</label>
+            </div>
+          </div>
+
+          <!--question 9-->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              9. Which of the following function of Array object adds one or more elements to the
+              front of an array and returns the new length of the array?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q9A" type="radio" name="q9" value="A" checked />
+              <label for="q9A" class="form-check-label"> toString()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q9B" type="radio" name="q9" value="B" />
+              <label for="q9B" class="form-check-label"> sort()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q9C" type="radio" name="q9" value="C" />
+              <label for="q9C" class="form-check-label"> splice()</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q9D" type="radio" name="q9" value="D" />
+              <label for="q9D" class="form-check-label"> unshift()</label>
+            </div>
+          </div>
+
+          <!--question 10--->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              10. Which of the following function of Array object adds one or more elements to the
+              front of an array and returns the new length of the array?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input id="q10A" type="radio" name="q10" value="A" checked />
+              <label for="q10A" class="form-check-label">
+                JavaScript is is complementary to and integrated with HTML.</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q10B" type="radio" name="q10" value="B" />
+              <label for="q10B" class="form-check-label">
+                JavaScript is open and cross-platform.</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q10C" type="radio" name="q10" value="C" />
+              <label for="q10C" class="form-check-label"> Both of the above.</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input id="q10D" type="radio" name="q10" value="D" />
+              <label for="q10D" class="form-check-label"> All of the above.</label>
+            </div>
+          </div>
+
+          <!--submit button-->
+          <div class="text-center">
+            <input type="submit" class="btn btn-light" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
